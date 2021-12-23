@@ -1,0 +1,39 @@
+.btn {
+    padding: 0.8em 1em;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1em;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--secondary-color-1);
+    border: none;
+    border-radius: 0.1em;
+    cursor: pointer;
+}
+
+.btn + .btn {
+    margin-right: 20px;
+}
+
+.btn.btn-round {
+    border-radius: 1.3em;
+}
+
+.btn.btn-round.fa {
+    width: 1.25em;
+    height: 1.25em;
+    font-size: 40px;
+    margin-top: -0.5em;
+    line-height: 1.2em;
+    padding: 0;
+    box-shadow: 0px 2px 8px #0005;
+}
+
+.btn.btn-round.fa:hover {
+    background-color: var(--secondary-color-2);
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color-2);
+}

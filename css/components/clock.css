@@ -1,0 +1,32 @@
+.clock {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 0;
+    width: 100%;
+    color: #fff;
+}
+
+.clock > .time {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.clock > .time > .value {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.clock > .time > .title {
+    text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+    .clock > .time {
+    }
+    .clock > .time:nth-child(1),
+    .clock > .time:nth-child(2) {
+        margin-bottom: 30px;
+    }
+}

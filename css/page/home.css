@@ -1,0 +1,214 @@
+/* base */
+@import '../base/reset.css';
+@import '../base/variables.css';
+@import '../base/layout.css';
+/* 3rd-party */
+@import '../components/font-awesome.min.css';
+/* components */
+@import '../components/button.css';
+@import '../components/clock.css';
+@import '../components/form.css';
+@import '../components/mouse.css';
+@import '../components/progres-bar.css';
+/* CUSTOM STYLE BELOW this COMMENT, FOR THIS PAGE */
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+    padding-bottom: 30px;
+    background-image: url(../../img/banner-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero > .row-short {
+    align-items: center;
+    text-align: center;
+}
+
+.hero .logo {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 45px;
+    object-fit: contain;
+}
+
+.hero .main-title {
+    margin-bottom: 15px;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.hero .main-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #777;
+}
+
+.hero .clock {
+    margin-bottom: 30px;
+}
+
+.hero .form {
+    width: 90%;
+    margin: 0 5px 40px;
+}
+
+.hero .form > .input {
+    color: #fff;
+    border-color: currentColor;
+}
+
+.hero .form > .input::placeholder {
+    color: currentColor;
+}
+/* MAIN CONTENT */
+
+.column > * {
+    margin-bottom: 20px;
+}
+.column > *:last-child {
+    margin-bottom: 0px;
+}
+
+.content-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1.2em;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+
+.content-description {
+    font-size: 17px;
+    color: #777;
+}
+
+.content-description > .link {
+    color: var(--secondary-color-1);
+    text-decoration: none;
+}
+
+.content-description > .link:hover {
+    text-decoration: underline;
+}
+main.form > button {
+    align-self: flex-end;
+}
+@media (min-width: 900px) {
+    .main > .form > input.input {
+        width: calc(50% - 10px);
+    }
+}
+.main > .form > input.input:last-of-type {
+    float: right;
+}
+
+/* FOOTER */
+footer.container {
+    padding-top: 0;
+    font-size: 17px;
+    color: #fff8;
+    text-align: center;
+}
+
+.container > .socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 0;
+    border-bottom: 2px solid #fff;
+    position: relative;
+}
+
+.socials > .fa {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.socials > .fa:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+footer.container > .row-short {
+    gap: 0;
+}
+
+footer .logo {
+    max-height: 50px;
+    width: 100%;
+    margin: 50px 0;
+    margin-bottom: 40px;
+    object-fit: contain;
+    object-position: top;
+}
+
+footer .trio {
+    display: flex;
+    justify-content: center;
+}
+
+footer .trio > p {
+    display: inline-block;
+    float: left;
+    padding: 0 10px;
+    position: relative;
+}
+
+footer .trio > p::before {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
+
+footer .trio > p:first-child::before {
+    display: none;
+}
+
+footer .trio > span {
+    float: left;
+}
+
+footer .white {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    footer .trio {
+        flex-direction: column;
+    }
+    footer .trio > p::before {
+        display: none;
+    }
+}
+
+.back-to-top {
+    position: absolute;
+    top: -0.3em;
+    right: -0.6em;
+    /* position: fixed;
+  bottom: 40%;
+  right: 40%; */
+}
+
+@media (max-width: 700px) {
+    .back-to-top {
+    }
+}
